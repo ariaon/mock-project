@@ -7,7 +7,7 @@ import UserAvatar from "../Images/UserAvatar.png";
 
 const NavBar = () => {
   return (
-    <navbar>
+    <nav>
       <ul style={styles.navList}>
         <li style={styles.left}>
           <p style={styles.title}>Avion</p>
@@ -27,7 +27,7 @@ const NavBar = () => {
           <SideAction image={UserAvatar} desc="userAvatar" />
         </li>
       </ul>
-    </navbar>
+    </nav>
   );
 };
 
@@ -42,9 +42,9 @@ const styles = {
     marginBottom: 0,
   },
   left: {
-    display: 'flex',
-    marginRight: 'auto',
-    paddingLeft: 70
+    display: "flex",
+    marginRight: "auto",
+    paddingLeft: 70,
   },
   title: {
     ...headline3,
@@ -58,7 +58,7 @@ const styles = {
     marginRight: "auto",
     paddingLeft: 150,
     listStyle: "none",
-    alignItems: 'center'
+    alignItems: "center",
   },
   sideActions: {
     display: "flex",
