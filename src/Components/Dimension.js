@@ -14,7 +14,6 @@ const Dimension = (props) => {
   const styles = {
     type: {
         ...headline6,
-        fontFamily: "Clash Display, sans-serif",
         color: "#2A254B"
     },
     value: {
