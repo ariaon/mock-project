@@ -62,6 +62,6 @@ const styles = {
     justifyContent: 'center',
     marginTop: '2%',
     marginBottom: "5%",
-    gap: "3%"
+    gap: "5%"
   }
 };
