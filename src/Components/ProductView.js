@@ -66,12 +66,11 @@ const styles = {
     height: "auto",
   },
   details: {
-    paddingLeft: "15%",
-    paddingRight: "15%",
+    marginLeft: "15%",
+    marginRight: "15%",
   },
   name: {
     ...headline1,
-    fontFamily: "Clash Display, sans-serif",
     color: '#2A254B'
   },
   price: {
@@ -80,24 +79,21 @@ const styles = {
     color: '#12131A'
   },
   description: {
-    paddingTop: "7%",
+    marginTop: "5%",
   },
   descriptionTitle: {
     ...headline5,
-    fontFamily: "Clash Display, sans-serif",
     color: '#2A254B'
   },
   descriptionBody: {
     ...bodyM,
-    fontFamily: "Satoshi, sans-serif",
     color: "#505977"
   },
   dimensions: {
-    paddingTop: "7%",
+    marginTop: "5%",
   },
   dimensionsTitle: {
     ...headline5,
-    fontFamily: "Clash Display, sans-serif",
     color: "#2A254B"
   },
   metrics: {
@@ -107,6 +103,5 @@ const styles = {
   
   amountText: {
     ...headline5,
-    fontFamily: "Clash Display, sans-serif",
   }
 };

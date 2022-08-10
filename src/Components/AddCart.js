@@ -37,11 +37,10 @@ const styles = {
   amount: {
     display: "flex",
     alignItems: 'center',
-    paddingTop: '7%'
+    marginTop: '5%'
   },
   amountText: {
     ...headline5,
-    fontFamily: "Clash Display, sans-serif",
     marginRight: "7%",
     marginBottom: 0
   },
