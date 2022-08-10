@@ -6,7 +6,7 @@ import { regionMonetarySymbol } from "../Utils/regionConversion";
 const ProductView = (props) => {
   return (
     <div style={styles.container}>
-      <img src={props.image} style={styles.image} alt="image" />
+      <img src={props.image} style={styles.image} alt="productImage" />
       <div style={styles.details}>
         <p style={styles.name}>{props.name}</p>
         <p style={styles.price}>
