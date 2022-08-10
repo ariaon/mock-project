@@ -40,11 +40,12 @@ const styles = {
     justifyContent: "flex-end",
     alignItems: "center",
     marginBottom: 0,
+    paddingLeft: 0
   },
   left: {
     display: "flex",
     marginRight: "auto",
-    paddingLeft: 70,
+    marginLeft: '5%',
   },
   title: {
     ...headline3,
@@ -54,15 +55,14 @@ const styles = {
   },
   mainLinks: {
     display: "flex",
-    gap: 44,
-    marginRight: "auto",
-    paddingLeft: 150,
-    listStyle: "none",
+    gap: "3vw",
+    marginLeft: "12vw",
     alignItems: "center",
+    whiteSpace: "nowrap"
   },
   sideActions: {
     display: "flex",
-    paddingRight: 100,
+    paddingRight: "5%",
     gap: 10,
     listStyle: "none",
   },
