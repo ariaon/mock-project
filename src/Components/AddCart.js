@@ -37,7 +37,7 @@ const styles = {
   amount: {
     display: "flex",
     alignItems: 'center',
-    marginTop: '5%'
+    marginTop: '25%'
   },
   amountText: {
     ...headline5,
