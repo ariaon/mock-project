@@ -4,15 +4,24 @@ import { darkPrimary, primary, white, borderDark, lightGrey } from "../Styles/Co
 
 const AddCart = (props) => {
   const [quantity, setQuantity] = useState(1);
+
+  const decrementOnClick = () => {
+    if (quantity > 1) setQuantity(quantity - 1)
+  }
+
+  const incrementOnClick = () => {
+    if (quantity < 100) setQuantity(quantity + 1)
+  }
+
   return (
     <div style={styles.amount}>
       <p style={styles.amountText}>Amount:</p>
       <div style={styles.stepper}>
-        <button style={styles.changeBtn}>
+        <button style={styles.changeBtn} onClick={decrementOnClick}>
           <p style={styles.changeSymbol}>-</p>
         </button>
         <p style={styles.quantityText}>{quantity}</p>
-        <button style={styles.changeBtn}>
+        <button style={styles.changeBtn} onClick={incrementOnClick}>
           <p style={styles.changeSymbol}>+</p>
         </button>
       </div>
@@ -76,5 +85,6 @@ const styles = {
     ...bodyM,
     color: white,
     marginBottom: 0,
+    whiteSpace: 'nowrap'
   }
 };
