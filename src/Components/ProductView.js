@@ -8,7 +8,7 @@ const ProductView = (props) => {
     <div style={styles.container}>
       <img src={props.image} style={styles.image} alt="productImage" />
       <div style={styles.details}>
-        <p style={styles.name}>{props.name}</p>
+        <p style={styles.title}>{props.title}</p>
         <p style={styles.price}>
           {regionMonetarySymbol(props.region)}
           {props.price}
@@ -69,7 +69,7 @@ const styles = {
     marginLeft: "15%",
     marginRight: "15%",
   },
-  name: {
+  title: {
     ...headline1,
     color: '#2A254B'
   },
