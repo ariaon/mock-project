@@ -1,5 +1,6 @@
 import { NavBar } from "../Components/NavBar.js";
 import { ProductView } from "../Components/ProductView.js";
+import { BrandBanner } from "../Components/BrandBanner.js"
 import FeaturedProduct from "../Images/FeaturedProduct.png";
 
 const mockRegion = {
@@ -32,6 +33,7 @@ const Home = () => {
     <div>
       <NavBar />
       <ProductView {...mockRegion} {...mockFeaturedProduct} />
+      <BrandBanner/>
     </div>
   );
 };

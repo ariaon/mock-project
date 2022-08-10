@@ -50,7 +50,6 @@ const styles = {
   title: {
     ...headline3,
     marginBottom: 0,
-    fontFamily: "Clash Display, sans-serif",
     color: "#22202E",
   },
   mainLinks: {
@@ -62,7 +61,7 @@ const styles = {
   },
   sideActions: {
     display: "flex",
-    paddingRight: "5%",
+    marginRight: "5%",
     gap: 10,
     listStyle: "none",
   },
