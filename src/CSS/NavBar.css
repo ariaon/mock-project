@@ -1,0 +1,34 @@
+.nav-bar__nav_list {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav-bar__left_container {
+  display: flex;
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.nav-bar__title {
+  margin-bottom: 0;
+  color: #22202e;
+}
+
+.nav-bar__main_links {
+  display: flex;
+  gap: 3vw;
+  margin-left: 12vw;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-bar__side_actions {
+  display: flex;
+  margin-right: 5%;
+  gap: 10px;
+  list-style: none;
+}

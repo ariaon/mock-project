@@ -1,5 +1,6 @@
-import { headline3 } from "../Styles/Text";
-import { darkPrimary } from "../Styles/ColorPallete";
+import "../CSS/Styles/Text.css"
+import "../CSS/Styles/ColorPallete.css"
+import "../CSS/BrandBanner.css"
 import { BrandFeature } from "./BrandFeature";
 import Delivery from "../Images/Delivery.png";
 import CheckmarkOutline from "../Images/CheckmarkOutline.png";
@@ -32,36 +33,13 @@ const BrandFeatures = [
 
 const BrandBanner = () => {
   return (
-    <div style={styles.container}>
-      <p style={styles.title}>What makes our brand different</p>
-      <div style={styles.featList}>
-        {BrandFeatures.map(feature => <BrandFeature image={feature.image} altText={feature.altText} name={feature.name} desc={feature.desc}/>)}
+    <div className="brand-banner">
+      <p className="headline3 dark-primary brand-banner__title">What makes our brand different</p>
+      <div className="brand-banner__feat_list">
+        {BrandFeatures.map(feature => <BrandFeature key={feature.name} image={feature.image} altText={feature.altText} name={feature.name} desc={feature.desc}/>)}
       </div>
     </div>
   );
 };
 
 export { BrandBanner };
-
-const styles = {
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    width: "100%",
-    justifyItem: "center",
-    alignItems: "center",
-    marginTop: '3%',
-  },
-  title: {
-    ...headline3,
-    color: darkPrimary,
-    marginBottom: 0,
-  },
-  featList:{
-    display: "flex",
-    justifyContent: 'center',
-    marginTop: '2%',
-    marginBottom: "5%",
-    gap: "5%"
-  }
-};

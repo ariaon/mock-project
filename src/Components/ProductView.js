@@ -1,34 +1,42 @@
 import { Dimension } from "./Dimension";
 import { AddCart } from "./AddCart";
-import { headline1, headline3, headline5, bodyM } from "../Styles/Text";
+import "../CSS/Styles/Text.css";
+import "../CSS/Styles/ColorPallete.css";
+import "../CSS/ProductView.css";
 import { regionMonetarySymbol } from "../Utils/regionConversion";
 
 const ProductView = (props) => {
   return (
-    <div style={styles.container}>
-      <img src={props.image} style={styles.image} alt="productImage" />
-      <div style={styles.details}>
-        <p style={styles.title}>{props.title}</p>
-        <p style={styles.price}>
+    <div className="product-view">
+      <img
+        src={props.image}
+        className="product-view__product_image"
+        alt="productImage"
+      />
+      <div className="product-view__details">
+        <p className="headline1 dark-primary">{props.title}</p>
+        <p className="headline3 product-view__price">
           {regionMonetarySymbol(props.region)}
           {props.price}
         </p>
         {props.description && (
-          <div style={styles.description}>
-            <p style={styles.descriptionTitle}>Description</p>
-            <div style={styles.descriptionBody}>
+          <div className="product-view__description">
+            <p className="headline5 dark-primary">Description</p>
+            <div className="bodyM product-view__description_body ">
               <p>{props.description}</p>
               <ul>
                 {props.features &&
-                  props.features.map((feature) => <li key={feature}>{feature}</li>)}
+                  props.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
               </ul>
             </div>
           </div>
         )}
         {props.dimensions && (
-          <div style={styles.dimensions}>
-            <p style={styles.dimensionsTitle}>Dimensions</p>
-            <div style={styles.metrics}>
+          <div className="product-view__dimensions">
+            <p className="headline5 dark-primary">Dimensions</p>
+            <div className="product-view__metrics">
               <Dimension
                 type="Height"
                 value={props.dimensions.height}
@@ -47,61 +55,10 @@ const ProductView = (props) => {
             </div>
           </div>
         )}
-          <AddCart id={props.id} region={props.region} price={props.price}/>
+        <AddCart id={props.id} region={props.region} price={props.price} />
       </div>
     </div>
   );
 };
 
 export { ProductView };
-
-const styles = {
-  container: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    alignItems: 'center'
-  },
-  image: {
-    width: "100%",
-    height: "auto",
-  },
-  details: {
-    marginLeft: "15%",
-    marginRight: "15%",
-  },
-  title: {
-    ...headline1,
-    color: '#2A254B'
-  },
-  price: {
-    ...headline3,
-    fontFamily: "Satoshi, sans-serif",
-    color: '#12131A'
-  },
-  description: {
-    marginTop: "5%",
-  },
-  descriptionTitle: {
-    ...headline5,
-    color: '#2A254B'
-  },
-  descriptionBody: {
-    ...bodyM,
-    color: "#505977"
-  },
-  dimensions: {
-    marginTop: "5%",
-  },
-  dimensionsTitle: {
-    ...headline5,
-    color: "#2A254B"
-  },
-  metrics: {
-    display: 'flex',
-    gap: '10%'
-  },
-  
-  amountText: {
-    ...headline5,
-  }
-};
