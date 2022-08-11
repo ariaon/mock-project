@@ -1,25 +1,16 @@
-import { bodyM, headline6 } from "../Styles/Text";
+import "../CSS/Styles/Text.css";
+import "../CSS/Styles/ColorPallete.css";
 
 const Dimension = (props) => {
-    return (
-      <div>
-        <p style={styles.type}>{props.type}</p>
-        <p style={styles.value}>{props.value}{props.unit}</p>
-      </div>
-    );
-  };
-  
-  export { Dimension };
-  
-  const styles = {
-    type: {
-        ...headline6,
-        color: "#2A254B"
-    },
-    value: {
-        ...bodyM,
-        fontFamily: "Satoshi, sans-serif",
-        color: "#505977"
-    }
-  };
-  
+  return (
+    <div>
+      <p className="headline6 dark-primary">{props.type}</p>
+      <p className="dimension__value">
+        {props.value}
+        {props.unit}
+      </p>
+    </div>
+  );
+};
+
+export { Dimension };

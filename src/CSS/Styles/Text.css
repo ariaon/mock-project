@@ -1,0 +1,53 @@
+.headline1 {
+    font-size: 36px;
+    font-family: "Clash Display", sans-serif;
+    line-height: 150%
+}
+
+.headline2 {
+    font-size: 32px;
+    font-family: "Clash Display", sans-serif;
+    line-height: 150%
+}
+
+.headline3 {
+    font-size: 24px;
+    font-family: "Clash Display", sans-serif;
+    line-height: 150%
+}
+
+.headline4 {
+    font-size: 20px;
+    font-family: "Clash Display", sans-serif;
+    line-height: 150%
+}
+
+.headline5 {
+    font-size: 16px;
+    font-family: "Clash Display", sans-serif;
+    line-height: 150%
+}
+
+.headline6 {
+    font-size: 14px;
+    font-family: "Clash Display", sans-serif;
+    line-height: 150%
+}
+
+.bodyS {
+    font-size: 14;
+    font-family: "Satoshi", sans-serif;
+    line-height: 150%
+}
+
+.bodyM {
+    font-size: 16px;
+    font-family: "Satoshi", sans-serif;
+    line-height: 150%
+}
+
+.bodyL {
+    font-size: 18px;
+    font-family: "Satoshi", sans-serif;
+    line-height: 150%
+}

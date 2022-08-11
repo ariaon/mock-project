@@ -1,0 +1,32 @@
+.product-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.product-view__product_image {
+  width: 100%;
+  height: auto;
+}
+
+.product-view__details {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.product-view__price {
+  font-family: "Satoshi", sans-serif;
+  color: #12131a;
+}
+.product-view__description {
+  margin-top: 5%;
+}
+.product-view__description_body {
+  color: #505977;
+}
+.product-view__dimensions {
+  margin-top: 5%;
+}
+.product-view__metrics {
+  display: flex;
+  gap: 10%;
+}

@@ -1,0 +1,13 @@
+.brand-feature__image{
+    width: 24px;
+    height: 24px
+}
+.brand-feature__name {
+    margin-top: 5%;
+    margin-bottom: 0
+}
+.brand-feature__desc {
+    width: 27ch;
+    margin-top: 5%;
+    margin-bottom: 0
+}
