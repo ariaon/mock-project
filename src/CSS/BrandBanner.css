@@ -1,18 +1,109 @@
-.brand-banner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-  margin-top: 4%;
+@media only screen and (min-width: 1480px){
+  .brand-banner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4%;
+  }
+  .brand-banner__title {
+    margin-bottom: 0;
+  }
+  .brand-banner__feat_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    gap: 5vw;
+  }
 }
-.brand-banner__title {
-  margin-bottom: 0;
+
+@media only screen and (min-width: 1280px) and (max-width: 1479px){
+  .brand-banner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4%;
+  }
+  .brand-banner__title {
+    margin-bottom: 0;
+  }
+  .brand-banner__feat_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    gap: 1vw;
+  }
 }
-.brand-banner__feat_list {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  gap: 5vw;
+
+@media only screen and (min-width: 850px) and (max-width: 1279px){
+  .brand-banner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4%;
+  }
+  .brand-banner__title {
+    margin-bottom: 0;
+  }
+  .brand-banner__feat_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    column-gap: 6vw;
+    row-gap: 4vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 849px){
+  .brand-banner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4%;
+  }
+  .brand-banner__title {
+    margin-bottom: 0;
+  }
+  .brand-banner__feat_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    column-gap: 1.35vw;
+    row-gap: 5vw;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px){
+  .brand-banner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 17%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .brand-banner__title {
+    margin-bottom: 0;
+  }
+
+  .brand-banner__feat_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    gap: 7%;
+  }
 }
