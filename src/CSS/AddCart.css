@@ -10,12 +10,12 @@
   .add-cart__stepper {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 1.563rem;
     background-color: #F9F9F9;
   }
   .add-cart__change_btn {
-    width: 35px;
-    height: 50px;
+    width: 2.188rem;
+    height: 3.125rem;
     border: none;
     cursor: pointer;
     background: none
@@ -31,12 +31,12 @@
     cursor: pointer;
     background: #2A254B;
     stroke: #4E4D93;
-    stroke-width: 1px;
+    stroke-width: 0.063rem;
     margin-left: auto;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-left: 50px;
+    padding-top: 1.25rem;
+    padding-right: 3.125rem;
+    padding-bottom: 1.25rem;
+    padding-left: 3.125rem;
     align-items: center;
     justify-items: center
   }
