@@ -1,5 +1,5 @@
 .nav-bar__nav_list {
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -29,6 +29,6 @@
 .nav-bar__side_actions {
   display: flex;
   margin-right: 5%;
-  gap: 10px;
+  gap: 0.625rem;
   list-style: none;
 }

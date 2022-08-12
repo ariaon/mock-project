@@ -1,53 +1,53 @@
 .headline1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Clash Display", sans-serif;
     line-height: 150%
 }
 
 .headline2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Clash Display", sans-serif;
     line-height: 150%
 }
 
 .headline3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Clash Display", sans-serif;
     line-height: 150%
 }
 
 .headline4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Clash Display", sans-serif;
     line-height: 150%
 }
 
 .headline5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Clash Display", sans-serif;
     line-height: 150%
 }
 
 .headline6 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Clash Display", sans-serif;
     line-height: 150%
 }
 
 .bodyS {
-    font-size: 14;
+    font-size: 0.875rem;
     font-family: "Satoshi", sans-serif;
     line-height: 150%
 }
 
 .bodyM {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Satoshi", sans-serif;
     line-height: 150%
 }
 
 .bodyL {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "Satoshi", sans-serif;
     line-height: 150%
 }
