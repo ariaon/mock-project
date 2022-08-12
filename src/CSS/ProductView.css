@@ -1,17 +1,35 @@
-.product-view {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+@media only screen and (min-width: 600px) {
+  .product-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .product-view__details {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 599px){
+  .product-view {
+    display: block;
+  }
+  .product-view__details {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 .product-view__product_image {
   width: 100%;
   height: auto;
 }
 
 .product-view__details {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .product-view__price {
   font-family: "Satoshi", sans-serif;

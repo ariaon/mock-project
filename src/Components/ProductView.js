@@ -1,11 +1,22 @@
+import { useState, useEffect } from "react";
 import { Dimension } from "./Dimension";
 import { AddCart } from "./AddCart";
 import "../CSS/Styles/Text.css";
 import "../CSS/Styles/ColorPallete.css";
 import "../CSS/ProductView.css";
 import { regionMonetarySymbol } from "../Utils/regionConversion";
+import { breakpointMobile, breakpointTablet } from "../Utils/breakpoints";
 
 const ProductView = (props) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <div className="product-view">
       <img
@@ -14,15 +25,34 @@ const ProductView = (props) => {
         alt="productImage"
       />
       <div className="product-view__details">
-        <p className="headline1 dark-primary">{props.title}</p>
-        <p className="headline3 product-view__price">
+        <p
+          className={
+            width >= breakpointTablet
+              ? "headline1 dark-primary"
+              : "headline3 dark-primary"
+          }
+        >
+          {props.title}
+        </p>
+        <p
+          className={
+            width >= breakpointTablet
+              ? "headline3 product-view__price"
+              : "headline4 product-view__price"
+          }
+        >
           {regionMonetarySymbol(props.region)}
           {props.price}
         </p>
         {props.description && (
           <div className="product-view__description">
-            <p className="headline5 dark-primary">Description</p>
-            <div className="bodyM product-view__description_body ">
+            <p className="headline5 dark-primary">
+              {width >= breakpointMobile
+                ? "Description"
+                : "Product Description"}
+            </p>
+            <div className={
+            width >= breakpointTablet ? "bodyM product-view__description_body ": "bodyS product-view__description_body "}>
               <p>{props.description}</p>
               <ul>
                 {props.features &&
